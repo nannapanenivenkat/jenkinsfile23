@@ -7,7 +7,7 @@ pipeline{
     stages {
         stages('code clone') {
 	        steps{
-			    git credentialsid: 'git', url: < 'https://github.com/ksrepo9/ks.git' >
+			    git branch: 'main', credentialsId: 'nannapanenivenkat', url: 'https://github.com/nannapanenivenkat/jenkinsfile23.git'
 			}
 			}
 
